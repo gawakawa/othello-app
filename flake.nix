@@ -14,6 +14,7 @@
             {
                 devShells.default = pkgs.mkShell {
                     buildInputs = with pkgs; [
+                        php83Packages.composer
                         docker
                         docker-compose
                         docker-credential-helpers
@@ -31,6 +32,9 @@
                         '' else ''
                             docker info > /dev/null 2>&1 || sudo systemctl start docker
                         ''}
+
+                        [ -d "vendor" ] || composer install -- ignore-platform-reqs
+                        [ -d "node_modules" ] || sail up -d && sail npm install && sail down
                     '';
                 };
             }
