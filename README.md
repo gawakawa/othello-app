@@ -9,6 +9,10 @@
 - [ ] CI/CD
 
 ## 開発環境のセットアップ
+### 前提条件
+- [Nix](https://nixos.org/)がインストールされている
+
+### 手順
 1. 
 ```bash
 nix develop
