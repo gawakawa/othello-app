@@ -1,66 +1,103 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Slackっぽい何か
+- [ ] メッセージを作成・投稿できる
+- [ ] 自分の投稿と他者の投稿が表示される
+- [ ] スレッド
+- [ ] リアクション
+- [ ] ワークスペース
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## 開発環境のセットアップ
+1. 
+```bash
+nix develop
+```
 
-## About Laravel
+2. 
+```bash
+sail up -d && sail npm run dev
+```
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## コミット規則
+- 絵文字 + メッセージ (先頭大文字の英文)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 例 :
+- 🎉 Initial commit
+- 🐛 Fix bugs
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 使用絵文字一覧
 
-## Learning Laravel
+| 絵文字 | コード | 説明 |
+|:---:|:---:|:---|
+| 🎨 | `:art:` | コードの構造/形式の改善 |
+| ⚡️ | `:zap:` | パフォーマンス改善 |
+| 🔥 | `:fire:` | コードやファイルの削除 |
+| 🐛 | `:bug:` | バグの修正 |
+| 🚑️ | `:ambulance:` | 重大なホットフィックス |
+| ✨ | `:sparkles:` | 新機能の導入 |
+| 📝 | `:memo:` | ドキュメントの追加や更新 |
+| 🚀 | `:rocket:` | デプロイ |
+| 💄 | `:lipstick:` | UI/スタイルファイルの追加や更新 |
+| 🎉 | `:tada:` | プロジェクトの開始 |
+| ✅ | `:white_check_mark:` | テストの追加/更新/合格 |
+| 🔒️ | `:lock:` | セキュリティやプライバシーに関する問題の修正 |
+| 🔐 | `:closed_lock_with_key:` | シークレットの追加や更新 |
+| 🔖 | `:bookmark:` | リリース/バージョンタグ |
+| 🚨 | `:rotating_light:` | コンパイラ/リンタの警告を修正 |
+| 🚧 | `:construction:` | 作業中 |
+| 💚 | `:green_heart:` | CI ビルドの修正 |
+| ⬇️ | `:arrow_down:` | 依存関係のダウングレード |
+| ⬆️ | `:arrow_up:` | 依存関係のアップグレード |
+| 📌 | `:pushpin:` | 依存関係を特定バージョンに固定 |
+| 👷 | `:construction_worker:` | CI ビルドシステムの追加や更新 |
+| 📈 | `:chart_with_upwards_trend:` | 分析やトラッキングコードの追加/更新 |
+| ♻️ | `:recycle:` | コードのリファクタリング |
+| ➕ | `:heavy_plus_sign:` | 依存関係の追加 |
+| ➖ | `:heavy_minus_sign:` | 依存関係の削除 |
+| 🔧 | `:wrench:` | 設定ファイルの追加/更新 |
+| 🔨 | `:hammer:` | 開発スクリプトの追加/更新 |
+| 🌐 | `:globe_with_meridians:` | 多言語対応 |
+| ✏️ | `:pencil2:` | タイポの修正 |
+| 💩 | `:poop:` | 改善が必要な悪いコード |
+| ⏪️ | `:rewind:` | 変更の取り消し |
+| 🔀 | `:twisted_rightwards_arrows:` | ブランチのマージ |
+| 📦️ | `:package:` | コンパイルされたファイルやパッケージの追加や更新 |
+| 👽️ | `:alien:` | 外部APIの変更に伴うコード更新 |
+| 🚚 | `:truck:` | リソースの移動や名前の変更 |
+| 📄 | `:page_facing_up:` | ライセンスの追加や更新 |
+| 💥 | `:boom:` | 破壊的変更の導入 |
+| 🍱 | `:bento:` | アセットの追加や更新 |
+| ♿️ | `:wheelchair:` | アクセシビリティの改善 |
+| 💡 | `:bulb:` | ソースコードにコメントを追加や更新 |
+| 🍻 | `:beers:` | 酔っ払ってコードを書いた |
+| 💬 | `:speech_balloon:` | ドキュメンテーションを追加/更新 |
+| 🗃️ | `:card_file_box:` | データベース関連の変更 |
+| 🔊 | `:loud_sound:` | ログの追加や更新 |
+| 🔇 | `:mute:` | ログの削除 |
+| 👥 | `:busts_in_silhouette:` | コントリビューターの追加 |
+| 🚸 | `:children_crossing:` | ユーザー体験/ユーザビリティの改善 |
+| 🏗️ | `:building_construction:` | アーキテクチャの変更 |
+| 📱 | `:iphone:` | レスポンシブデザインの作業 |
+| 🤡 | `:clown_face:` | モックテスト |
+| 🥚 | `:egg:` | イースターエッグの追加や更新 |
+| 🙈 | `:see_no_evil:` | .gitignoreの追加や更新 |
+| 📸 | `:camera_flash:` | スナップショットの追加や更新 |
+| ⚗️ | `:alembic:` | 新機能の実験 |
+| 🔍️ | `:mag:` | SEO の改善 |
+| 🏷️ | `:label:` | 型の追加や更新 |
+| 🌱 | `:seedling:` | シードファイルの追加や更新 |
+| 🚩 | `:triangular_flag_on_post:` | フィーチャーフラグの追加、更新、削除 |
+| 🥅 | `:goal_net:` | エラーの捕捉 |
+| 💫 | `:dizzy:` | アニメーションやトランジションの追加や更新 |
+| 🗑️ | `:wastebasket:` | クリーンアップが必要なコードの非推奨化 |
+| 🛂 | `:passport_control:` | 認証、ロール、パーミッションに関連するコード |
+| 🩹 | `:adhesive_bandage:` | 重要でない問題の単純な修正 |
+| 🧐 | `:monocle_face:` | データの探索/検査 |
+| ⚰️ | `:coffin:` | デッドコードの削除 |
+| 🧪 | `:test_tube:` | 失敗するテストの追加 |
+| 👔 | `:necktie:` | ビジネスロジックの追加や更新 |
+| 🩺 | `:stethoscope:` | ヘルスチェックの追加や更新 |
+| 🧱 | `:bricks:` | インフラ関連の変更 |
+| 🧑‍💻 | `:technologist:` | DXの改善 |
+| 💸 | `:money_with_wings:` | スポンサーシップやお金に関するインフラの追加 |
+| 🧵 | `:thread:` | マルチスレッドやコンカレンシー関連の追加や更新 |
+| 🦺 | `:safety_vest:` | バリデーションの追加/更新 |
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
