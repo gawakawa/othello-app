@@ -14,6 +14,7 @@
             {
                 devShells.default = pkgs.mkShell {
                     buildInputs = with pkgs; [
+                        php83
                         php83Packages.composer
                         docker
                         docker-compose
@@ -34,7 +35,7 @@
                         ''}
 
                         [ -d "vendor" ] || composer install
-                        [ -d "node_modules" ] || sail up -d && sail npm install && sail down
+                        [ -d "node_modules" ] || sail up -d && sail npm install
                     '';
                 };
             }
