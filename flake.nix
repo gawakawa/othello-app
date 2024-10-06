@@ -33,9 +33,6 @@
                         '' else ''
                             docker info > /dev/null 2>&1 || sudo systemctl start docker
                         ''}
-
-                        [ -d "vendor" ] || composer install
-                        [ -d "node_modules" ] || sail up -d && sail npm install
                     '';
                 };
             }
