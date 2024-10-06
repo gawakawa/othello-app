@@ -13,14 +13,29 @@
 - [Nix](https://nixos.org/)がインストールされている
 
 ### 手順
-1. 
+1. Nixの開発用シェルに入る
 ```bash
 nix develop
 ```
 
-2. 
+2. Laravelの依存関係を追加 ( 初回のみ )
 ```bash
-sail up -d && sail npm run dev
+composer install && composer --dev require nunomaduro/larastan
+```
+
+3. Sailを起動 
+```bash
+sail up -d
+```
+
+4. nodeの依存関係を追加 ( 初回のみ )
+```bash
+sail npm install
+```
+
+5. 開発環境の立ち上げ
+```bash
+sail npm run dev
 ```
 
 ## コミット規則
